@@ -1,0 +1,73 @@
+.Main-background{
+	background-color: #212121;
+	color: white;
+	height: auto;
+	width: auto;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.Logo-large{
+	height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    padding-right: 10px;
+}
+
+.Login {
+   	padding: 60px 0;
+   	max-width: 350px;
+}
+
+.Login form {
+	margin: 0 auto;
+	max-width: 320px;
+}
+
+.Login Button {
+	background-color: #9c27b0;
+	font-size: 20px;
+	color: white;
+}
+
+.VerticalLine {
+    border-left: 2px solid white;
+    height: 125px;
+    padding-right: 10px;
+}
+
+.SignIn-Panel{
+	background-color: #424242;
+	color: white;
+	border: 0px;
+}
+
+.MainTitle {
+	font-size: 40px;
+}
+
+.List {
+	padding-top: 30px;
+	margin: auto;
+	font-size: 25px;
+}
+
+.List li {
+	padding: 15px;
+}
+
+.Grid-center {
+	margin: auto;
+}
+
+.Addon {
+	color: white;
+	background-color: #9c27b0;
+}
