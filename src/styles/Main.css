@@ -51,6 +51,8 @@
 
 .MainTitle {
 	font-size: 40px;
+	vertical-align: middle;
+	padding-top: 50px;
 }
 
 .List {
@@ -64,10 +66,17 @@
 }
 
 .Grid-center {
-	margin: auto;
+	display:inline-block;
 }
 
 .Addon {
 	color: white;
 	background-color: #9c27b0;
+}
+
+.Inline {
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	margin: auto;
 }

@@ -35,15 +35,13 @@ class SignIn extends Component {
     <Grid>
 		<Col md={6} className="Grid-center">
 			<Row className="Grid-center">
-				<Col>
-	    			<img className="Logo-large" src={logo}/>
-	    		</Col>
-	    		<Col>
-	    			<div className="VerticalLine"></div>
-	    		</Col>
-	    		<Col className="MainTitle text-left">
-	    			<div>Instagram</div>
-	    			<div>Analytics</div>
+				<Col className="MainTitle">
+	    			<img className="Logo-large Inline" src={logo}/>
+	    			<div className="VerticalLine Inline"></div>
+		    		<div className="text-left Inline">
+		    			<div>Instagram</div>
+		    			<div>Analytics</div>
+		    		</div>
 	    		</Col>
     		</Row>
     		<Row className="List text-left">
