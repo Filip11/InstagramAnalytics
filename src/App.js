@@ -3,6 +3,8 @@ import logo from './Instagram_simple_icon.svg';
 import './App.css';
 import FollowerGrowth from './components/FollowerGrowth'
 import WhenToPost from './components/WhenToPost'
+//import node from './components/WhenToPostD3';
+import HeatMap from 'react-heatmap-grid';
 
 class App extends Component {
   render() {
@@ -15,7 +17,7 @@ class App extends Component {
           <h1 className = "colorTest1">Hello World</h1>
           <h1 className = "colorTest2">Hello World</h1>
         </header>
-        <FollowerGrowth />
+        <FollowerGrowth /> 
         <WhenToPost />
       </div>
 
@@ -23,5 +25,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
