@@ -1,17 +1,24 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: auto;
+  width: auto;
 }
 
 .App-logo {
   /*animation: App-logo-spin infinite 20s linear;*/
-  height: 80px;
+  height: 40px;
 }
 
 .App-header {
   background-color: #222;
-  height: 350px;
-  padding: 20px;
+  height: 50px;
   color: white;
+}
+.App-sidebar {
+  background-color: green;
+  height: 100%;
+  width: 10%;
 }
 
 .App-title {
@@ -23,15 +30,6 @@
   font-size: large;
 }
 
-.colorTest{
-  color: #e1306c;
-}
-.colorTest2{
-  color: #833ab4;
-}
-.colorTest1{
-  color: #F77737;
-}
 
 
 

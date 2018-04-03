@@ -1,18 +1,22 @@
-.App {
-  text-align: center;
+.FollowerChart{
+  background-color: black;
+  color:white;
 }
 
-.App-title {
-  font-size: 1.5em;
-  color: #c13584;
+.PostCol {
+  /*
+  margin: auto;
+  vertical-align: middle;*/
+  /*padding: 50px;*/
 }
-
-.App-intro {
-  font-size: large;
+.PostImg {
+  height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    margin: auto;
+    vertical-align: middle;
 }
-
-.colorTest{
-  color: #e1306c;
+.float-my-children > * {
+    float:left;
 }
-
-

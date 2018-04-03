@@ -7,4 +7,7 @@
 .react-calendar-heatmap .color-empty {
   fill: #d6e685;
 }
-
+.heatChart {
+	background: black;
+	height: 300px;
+}
