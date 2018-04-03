@@ -13,6 +13,14 @@
 	text-align: center;
 }
 
+.text-center{
+	vertical-align: middle;
+}
+
+.text-spacing{
+	padding-right: 3px;
+}
+
 .Logo-large{
 	height: auto; 
     width: auto; 
@@ -22,7 +30,7 @@
 }
 
 .Login {
-   	padding: 60px 0;
+   	padding: 30px 0;
    	max-width: 350px;
 }
 
@@ -52,13 +60,15 @@
 .MainTitle {
 	font-size: 40px;
 	vertical-align: middle;
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 .List {
 	padding-top: 30px;
-	margin: auto;
 	font-size: 25px;
+	vertical-align: middle;
+	margin: auto;
+	padding-left: 100px;
 }
 
 .List li {
@@ -79,4 +89,9 @@
 	float: left;
 	vertical-align: middle;
 	margin: auto;
+}
+
+.Panel-size {
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
