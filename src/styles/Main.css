@@ -1,8 +1,9 @@
 .Main-background{
-	background-color: #212121;
+	background-color: black;
 	color: white;
 	height: auto;
 	width: auto;
+	margin: auto;
 }
 
 .text-left{
@@ -88,7 +89,6 @@
 	display: inline-block;
 	float: left;
 	vertical-align: middle;
-	margin: auto;
 }
 
 .Panel-size {

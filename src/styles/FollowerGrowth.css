@@ -1,0 +1,22 @@
+.FollowerChart{
+  background-color: black;
+  color:white;
+}
+
+.PostCol {
+  /*
+  margin: auto;
+  vertical-align: middle;*/
+  /*padding: 50px;*/
+}
+.PostImg {
+  height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    margin: auto;
+    vertical-align: middle;
+}
+.float-my-children > * {
+    float:left;
+}

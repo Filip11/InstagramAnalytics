@@ -1,5 +1,6 @@
 .Title {
 	font-size: 30px;
+	float: left;
 }
 
 .PostImg {
@@ -42,8 +43,13 @@
 .Modal-Img {
 	height: auto; 
     width: auto; 
-    max-width: 350px; 
-    max-height: 350px;
+    max-width: 260px; 
+    max-height: 260px;
     margin: auto;
     vertical-align: middle;
+}
+
+.grid {
+	padding: 0px;
+	padding-left: 80px;
 }

@@ -1,21 +1,37 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: auto;
+  width: auto;
+  overflow: hidden
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 50px;
+  padding-right: 8px;
+  margin: auto;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 60px;
+  width : auto;
   color: white;
+  vertical-align: middle;
+}
+
+.App-sidebar {
+  height: 100%;
+  width: 10%;
 }
 
 .App-title {
   font-size: 1.5em;
+  color: #c13584;
 }
 
 .App-intro {
@@ -23,12 +39,50 @@
 }
 
 .App-content {
+  background-color: black;
   display: inline-block;
   float: left;
+  height: auto;
+  width: auto;
 }
 
 .App-side-menu {
-  width: 30px;
+  width: 60px;
+  float: left;
+  background-color: #424242;
+  height: 1000px; /*to be fixed*/
+}
+
+.router {
+  background-color: black;
+}
+
+.App-username {
+  display: inline-block;
+  float: right;
+}
+
+.App-user-icon {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.vertical-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.App-VerticalLine {
+    border-left: 1px solid white;
+    height: 55px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.top-title {
+  float: left;
+  font-size: 18px;
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {

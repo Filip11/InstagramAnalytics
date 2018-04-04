@@ -1,5 +1,5 @@
 .side-menu {
-	width: 40px;
+	width: 60px;
 	padding: 0px;
 	margin: auto;
 }
@@ -21,4 +21,10 @@
 
 .nav > li > a:hover {
   	background-color: grey;
+}
+
+.nav-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
 }
