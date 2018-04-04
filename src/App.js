@@ -19,17 +19,7 @@ class App extends Component {
   render() {
     return (
 
-      /*
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        
-        </header>
-        <SideNav />
-        <FollowerGrowth />
-        <WhenToPost />
-      </div>
-      */
+
       <Router>
       <div className="App">
 
@@ -37,8 +27,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         
         
-        <ul>
-
+        <ul className="App">
           <li>
             <Link to="/FollowerGrowth"><img src={pinkheart} className="App-logo" alt="logo"/></Link>
           </li>
@@ -49,7 +38,7 @@ class App extends Component {
         <Route path="/FollowerGrowth" component={FollowerGrowth} />
         <Route path="/WhenToPost" component={WhenToPost} />
         </header>
-        <SideNav />
+       {/* <SideNav /> */}
       </div>
 
     </Router>
