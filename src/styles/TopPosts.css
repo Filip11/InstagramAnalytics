@@ -1,0 +1,55 @@
+.Title {
+	font-size: 30px;
+	float: left;
+}
+
+.PostImg {
+	height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.btn-square { 
+	height: 165px;
+	width: 165px; 
+	margin: auto;
+    vertical-align: middle;
+}
+
+.btn-square:hover{
+     background: #833ab4;
+}
+
+.PostCol {
+	margin: auto;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+.Modal {
+	margin: auto;
+	vertical-align: middle;
+}
+
+.Modal-body {
+	margin: auto;
+	vertical-align: middle;
+	display: block;
+}
+
+.Modal-Img {
+	height: auto; 
+    width: auto; 
+    max-width: 260px; 
+    max-height: 260px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.grid {
+	padding: 0px;
+	padding-left: 80px;
+}
