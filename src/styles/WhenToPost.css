@@ -9,5 +9,26 @@
 }
 .heatChart {
 	background: black;
-	height: 300px;
+	height: 675px;
+}
+.subtitle{
+	float:left;
+	margin-left: 80px;
+}
+
+.jumbotronBig{
+	background-color: #440060;
+	height:285px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.jumbotronSmall{
+	background-color: #440060;
+	height:140px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+.cardText{
+	margin-top: -35px;
 }

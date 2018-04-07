@@ -28,8 +28,22 @@ class SideMenu extends Component {
         postNumber: 1,
         clock : clockPink,
         follower: followerWhite,
-        heart: heartWhite
+        heart: heartWhite,
+        height: undefined
       };
+  }
+
+  handleResize = () => this.setState({
+    height: window.innerHeight
+  });
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
   }
 
   handleSelect(selectedKey) {
@@ -63,8 +77,10 @@ class SideMenu extends Component {
       const follower = this.state.follower;
       const heart = this.state.heart;
 
+      const heightStyle = { height: this.state.height };
+
       return(
-        <div className="side-menu">
+        <div className="side-menu" style={heightStyle}>
           <Nav bsStyle="pills" stacked onSelect={this.handleSelect} className="nav" >
             <NavItem eventKey={1} title="When To Post" className="nav-item">
               <Link to="/WhenToPost"><img className="nav-img" src={clock} /> </Link>

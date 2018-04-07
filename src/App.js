@@ -77,10 +77,10 @@ class App extends Component {
 
         <div className="App-content">
 
-            <div className="Inline App-side-menu">
+            <div className="App-Inline App-side-menu">
               <SideMenu selectedPage={this.sideMenuCallback} />
             </div>
-            <div className="Inline">
+            <div className="App-Inline App-page">
                 <Route path="/WhenToPost" component={WhenToPost} />
                 <Route path="/FollowerGrowth" component={FollowerGrowth} />
                 <Route path="/TopPosts" component={TopPosts} />
@@ -90,6 +90,7 @@ class App extends Component {
        {
         /*uncomment do display signin page, to be fixed for demo*/
         /*<SignIn />*/
+        /*<FollowerGrowth />*/
      }
       </div>
       </Router>
@@ -97,6 +98,7 @@ class App extends Component {
 
 
       /*
+
       <Router>
       <div className="App">
 
@@ -104,8 +106,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         
         
-        <ul>
-
+        <ul className="App">
           <li>
             <Link to="/FollowerGrowth"><img src={pinkheart} className="App-logo" alt="logo"/></Link>
           </li>
@@ -116,7 +117,7 @@ class App extends Component {
         <Route path="/FollowerGrowth" component={FollowerGrowth} />
         <Route path="/WhenToPost" component={WhenToPost} />
         </header>
-        <SideNav />
+       { <SideNav /> }
       </div>
 
     </Router>
