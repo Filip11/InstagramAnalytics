@@ -14,13 +14,19 @@ import WhenToPost from './components/WhenToPost'
 //import node from './components/WhenToPostD3';
 import HeatMap from 'react-heatmap-grid';
 import ReactTooltip from 'react-tooltip'
-import SideNav from './components/sideMenu'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import whiteheart from "./images/heart-insta-pink.png"
 import pinkheart from "./images/heart-insta-pink.png"
 import clockWhite from "./images/clock-white.png"
 import clockPink from "./images/clock-pink.png"
 import userIcon from "./images/maleuser.png"
+
+import TransitionGroup from "react-transition-group/TransitionGroup";
+
+const firstChild = props => {
+  const childrenArray = React.Children.toArray(props.children);
+  return childrenArray[0] || null;
+};
 
 class App extends Component {
 
@@ -56,9 +62,6 @@ class App extends Component {
 
     return (
 
-<<<<<<< HEAD
-
-=======
       <Router className="router">
       <div className="App">
         <header className="App-header">
@@ -66,8 +69,7 @@ class App extends Component {
               <img className="App-logo Inline" src={logo}/>
               <div className="App-VerticalLine Inline"></div>
               <div className="text-left Inline">
-                <div>Instagram</div>
-                <div>Analytics</div>
+                <div>Instagram Analytics</div>
               </div>
               </div>
             <div className="App-username">
@@ -90,40 +92,11 @@ class App extends Component {
             </div>
         </div>
 
-       {
-        /*uncomment do display signin page, to be fixed for demo*/
-        /*<SignIn />*/
-     }
+
       </div>
       </Router>
 
 
-
-      /*
->>>>>>> dcabdde9adef48039a9ee19558f7363e48ac56e8
-      <Router>
-      <div className="App">
-
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        
-        
-        <ul className="App">
-          <li>
-            <Link to="/FollowerGrowth"><img src={pinkheart} className="App-logo" alt="logo"/></Link>
-          </li>
-          <li>
-            <Link to="/WhenToPost"><img src={clockPink} className="App-logo" alt="logo"/></Link>
-          </li>
-        </ul>
-        <Route path="/FollowerGrowth" component={FollowerGrowth} />
-        <Route path="/WhenToPost" component={WhenToPost} />
-        </header>
-       {/* <SideNav /> */}
-      </div>
-
-    </Router>
-      */
     );
     
   }

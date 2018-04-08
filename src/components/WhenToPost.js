@@ -4,7 +4,8 @@ import HeatMap from "react-heatmap-grid"
 import CalendarHeatmap from 'reactjs-calendar-heatmap'
 import WhenToPostStats from './WhenToPostStats.js'
 import {Container,Panel, Col, Row, Grid} from 'react-bootstrap';
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import '../styles/Main.css';
 
 /*
 
@@ -295,17 +296,7 @@ const data = new Array(yLabels.length)
 }]
 const WhenToPost = () => (
 
-{/*
-  <HeatMap
-    xLabels={xLabels}
-    yLabels={yLabels}
-    data={data}
-    background="#e1306c"
-    height={50}
-  />
-)
-*/},
-  <div className = "heatChart">
+  <div className = "heatChart Main-background" >
     <div className="subtitle">
       <h1>When To Post</h1>
     </div>
@@ -315,7 +306,7 @@ const WhenToPost = () => (
       overview={'day'}
       handler={null}>
     </CalendarHeatmap>
-    
+    <div className="separator"></div>
     <Grid fluid={true}>
     <Row>
       <div className="subtitle">

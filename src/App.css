@@ -83,6 +83,8 @@
   float: left;
   font-size: 18px;
   display: inline-block;
+  font-family:"Billabong";
+  font-size: 40px;
 }
 
 @keyframes App-logo-spin {
