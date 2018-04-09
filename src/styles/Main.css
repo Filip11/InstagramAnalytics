@@ -1,3 +1,19 @@
+@font-face {
+	font-family: Playfair-Bold;
+	src: url("../fonts/PlayfairDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: Billabong;
+	src: url("../fonts/Billabong.ttf") format("opentype");
+}
+@font-face {
+    font-family: Playfair;
+    src: url("../fonts/PlayfairDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf") format("opentype");
+}
 .Main-background{
 	background-color: black;
 	color: white;
@@ -41,7 +57,7 @@
 }
 
 .Login Button {
-	background-color: #9c27b0;
+	background-color: #440060;
 	font-size: 20px;
 	color: white;
 }
@@ -82,7 +98,7 @@
 
 .Addon {
 	color: white;
-	background-color: #9c27b0;
+	background-color: #440060;
 }
 
 .Inline {

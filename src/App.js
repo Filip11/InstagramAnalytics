@@ -13,6 +13,7 @@ import FollowerGrowth from './components/FollowerGrowth';
 import WhenToPost from './components/WhenToPost';
 //import node from './components/WhenToPostD3';
 import HeatMap from 'react-heatmap-grid';
+
 import ReactTooltip from 'react-tooltip';
 import SideNav from './components/sideMenu';
 import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
@@ -21,6 +22,13 @@ import pinkheart from "./images/heart-insta-pink.png";
 import clockWhite from "./images/clock-white.png";
 import clockPink from "./images/clock-pink.png";
 import userIcon from "./images/maleuser.png";
+
+import TransitionGroup from "react-transition-group/TransitionGroup";
+
+const firstChild = props => {
+  const childrenArray = React.Children.toArray(props.children);
+  return childrenArray[0] || null;
+};
 
 class App extends Component {
 
@@ -77,15 +85,13 @@ class App extends Component {
         </div>
      )
 
-
     const topBar = (
       <header className="App-header">
       <div className="top-title Inline">
         <img className="App-logo Inline" src={logo}/>
         <div className="App-VerticalLine Inline"></div>
         <div className="text-left Inline">
-          <div>Instagram</div>
-          <div>Analytics</div>
+          <div>Instagram Analytics</div>
         </div>
       </div>
       <div className="App-username">
