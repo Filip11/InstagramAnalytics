@@ -4,6 +4,10 @@ import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 import Stats from './FollowerStats.js';
 import SimplePieChart from './SimplePieChart.js';
 import {Container,Panel, Col, Row, Grid} from 'react-bootstrap';
+import PredefinedRanges from './PredefinedRanges.js';
+import moment from 'moment';
+
+
 
 const data = [
       {targetDate: '01/01/2017', Followers: 3000},
@@ -14,6 +18,7 @@ const data = [
       {targetDate: '06/01/2017', Followers: 3690},
       {targetDate: '07/01/2017', Followers: 3790},
 ];
+
 const FollowerGrowth = () => (
 	
 
@@ -21,10 +26,12 @@ const FollowerGrowth = () => (
   <div className='subtitle'>
   	<h1>Follower Growth</h1>
   </div>
+  {/*
+  <PredefinedRanges /> */},
   	<div className="FollowerChart">
   		
-	        	  <AreaChart width={1380} height={580} data={data}
-	        	    margin={{ top: 30, right: 30, left: 20, bottom: 60 }}>
+	        	  <AreaChart width={1380} height={540} data={data}
+	        	    margin={{ top: 0, right: 30, left: 20, bottom: 30 }}>
 	        	    <defs>
 	        	    	
 	        	      <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -39,7 +46,6 @@ const FollowerGrowth = () => (
 	        	   	<YAxis stroke="white"/>
 	        	   	<CartesianGrid />
 	        	   	<Tooltip/>
-	        	   	<Legend />
 	        		<Area type="monotone" dataKey="Followers" stroke="#833ab4" fillOpacity={1} fill="url(#colorUv)" />
 	        	  </AreaChart>	
 	        	  </div>
