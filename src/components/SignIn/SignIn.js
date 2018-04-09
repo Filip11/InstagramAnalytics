@@ -10,11 +10,14 @@ class SignIn extends Component {
 
     this.handleDismiss = this.handleDismiss.bind(this);
     this.handleShow = this.handleShow.bind(this);
+    //this.handleValidation = this.handleValidation.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
       username: "",
       password: "",
-      show: false
+      show: false,
+      signedIn: false
     };
   }
 
@@ -34,10 +37,23 @@ class SignIn extends Component {
     const test = this.state.username == "johndoe1234" && this.state.password == "1234";
     if (!test){
     	this.handleShow();
+    	this.setState({ signedIn: false });
     }else{
     	//logged in to application
+    	this.setState({ signedIn: true });
+    	this.props.history.push("/WhenToPost")
     }
   }
+/*
+  handleValidation() {
+  	const test = this.state.username == "johndoe1234" && this.state.password == "1234";
+    if (!test){
+    	this.props.isSignedIn(this.state.signedIn);
+    }else{
+    	//logged in to application
+    	this.props.isSignedIn(this.state.signedIn);
+    }
+  }*/
 
   handleDismiss() {
     this.setState({ show: false });

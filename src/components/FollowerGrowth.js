@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/FollowerGrowth.css';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import Stats from './FollowerStats.js';
-import SimplePieChart from './SimplePieChart.js';
 import {Container,Panel, Col, Row, Grid} from 'react-bootstrap';
 import PredefinedRanges from './PredefinedRanges.js';
 import moment from 'moment';

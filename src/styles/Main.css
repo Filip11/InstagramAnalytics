@@ -18,7 +18,7 @@
 	background-color: black;
 	color: white;
 	height: auto;
-	width: auto;
+	width: 100%;
 	margin: auto;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .Login Button {
-	background-color: #9c27b0;
+	background-color: #440060;
 	font-size: 20px;
 	color: white;
 }
@@ -98,7 +98,7 @@
 
 .Addon {
 	color: white;
-	background-color: #9c27b0;
+	background-color: #440060;
 }
 
 .Inline {
