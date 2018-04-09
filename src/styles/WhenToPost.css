@@ -13,6 +13,9 @@
 	height: 675px;
 	width:1350px;
 }
+.calendarHeatmap{
+	height:600px;
+}
 .subtitle{
 	float:left;
 	margin-left: 80px;
@@ -41,6 +44,5 @@
 	color: white;
 }
 .separator{
-	padding-top: 30px;
-	padding-bottom: 30px;
+
 }
