@@ -1,0 +1,41 @@
+.FollowerChart{
+  background-color: black;
+  color:white;
+  font-family: Playfair-Bold;
+}
+
+.PostCol {
+  /*
+  margin: auto;
+  vertical-align: middle;*/
+  /*padding: 50px;*/
+}
+.PostImg {
+  height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+    margin: auto;
+    vertical-align: middle;
+}
+.float-my-children > * {
+    float:left;
+}
+
+.piechart{
+  /*padding-left: 30px;*/
+}
+.subtitle{
+  float:left;
+  margin-left: 80px;
+}
+.jumbotronStat{
+  background-color: #440060;
+  margin-top: 20px;
+  height: 180px;
+  font-family:"Playfair";
+}
+.tronText{
+  margin-top: -30px;
+  color: white;
+}

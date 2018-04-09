@@ -1,0 +1,46 @@
+
+.react-calendar-heatmap .color-scale-1 {
+ fill: #c13584;
+ }
+.react-calendar-heatmap .color-scale-2 { 
+	fill: #e1306c; 
+}
+.react-calendar-heatmap .color-empty {
+  fill: #d6e685;
+}
+.heatChart {
+	background: black;
+	height: 675px;
+	width:1350px;
+}
+.subtitle{
+	float:left;
+	margin-left: 80px;
+	color: white;
+	font-family:"Playfair-Bold";
+}
+
+.jumbotronBig{
+	background-color: #440060;
+	height:285px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color:white;
+	font-family:"Playfair";
+}
+.jumbotronSmall{
+	background-color: #440060;
+	height:140px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	font-family:"Playfair";
+}
+.cardText{
+	margin-top: -35px;
+	color: white;
+}
+.separator{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

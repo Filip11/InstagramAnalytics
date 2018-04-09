@@ -1,0 +1,30 @@
+.side-menu {
+	width: 60px;
+	padding: 0px;
+	margin: auto;
+}
+
+.nav-img {
+	height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.nav {
+  	align-items: center;
+  	margin: auto;
+  	float: left;
+}
+
+.nav > li > a:hover {
+  	background-color: grey;
+}
+
+.nav-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
