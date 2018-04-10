@@ -9,6 +9,8 @@ import mountain from '../../images/mountain.jpg';
 import beach from '../../images/beach.jpg';
 import nyc from '../../images/nyc.jpg';
 import trees from '../../images/trees.jpg';
+import kick from '../../images/ronaldokick.jpg';
+
 
 class TopPosts extends Component {
 
@@ -53,7 +55,7 @@ class TopPosts extends Component {
  					<Col className="PostCol" md={4}>
  						<span className="Post-text">#2</span><br/>
 	 					<Button className="btn-square" bsSize="xsmall">
-	 						<img className="newImg" src={kitty} onClick={()=>this.handleShow(2)}/>
+	 						<img className="newImg" src={kick} onClick={()=>this.handleShow(2)}/>
 	 					</Button>
  					</Col>
  					<Col className="PostCol" md={4}>
@@ -94,7 +96,7 @@ class TopPosts extends Component {
           </Modal.Header>
           <Modal.Body>
           	
-            <img className="Modal-Img img-responsive center-block" src={kitty} />
+            <img className="Modal-Img img-responsive center-block" src={kick} />
             <div className="Modal-body">
             <span className="Post-text">04/03/2018</span><br/>
             <span className="text-middle Post-text">
