@@ -7,7 +7,13 @@
     max-height: 150px;
 }
 
+.Post-subtitle {
+	font-family:"Playfair-Bold";
+}
 
+.Post-text{
+	font-family:"Playfair";
+}
 
 .btn-square { 
 	height: 165px;

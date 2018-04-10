@@ -97,7 +97,7 @@ class App extends Component {
         </div>
       </div>
       <div className="App-username">
-        <div className="vertical-text">
+        <div className="vertical-text text-username">
           @JohnDoe1234
         </div>
         <img className="App-user-icon" src={userIcon}/>

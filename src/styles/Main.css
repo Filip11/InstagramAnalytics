@@ -46,6 +46,15 @@
     padding-right: 10px;
 }
 
+.Main-title {
+	font-family:"Billabong";
+	font-size: 50px;
+}
+
+.Main-subtitle {
+	font-family:"Playfair";
+}
+
 .Login {
    	padding: 30px 0;
    	max-width: 350px;

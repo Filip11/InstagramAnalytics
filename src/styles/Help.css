@@ -8,3 +8,11 @@
 	height: 30px;
 	padding-right: 10px;
 }
+
+.Help-title {
+	font-family:"Playfair-Bold";
+}
+
+.Help-text {
+	font-family:"Playfair";
+}

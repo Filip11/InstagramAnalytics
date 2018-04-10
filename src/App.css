@@ -3,7 +3,7 @@
   background-color: black;
   height: auto;
   width: auto;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .App-logo {
@@ -38,11 +38,16 @@
   font-size: large;
 }
 
+.text-username {
+  font-family:"Billabong";
+  font-size: 20px;
+}
+
 .App-content {
   background-color: black;
   display: inline-block;
   float: left;
-  height: auto;
+  height: 100%;
   width: 100%;
   overflow-x:auto;
   overflow: hidden;

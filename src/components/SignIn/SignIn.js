@@ -88,7 +88,7 @@ class SignIn extends Component {
 				<Col className="MainTitle">
 	    			<img className="Logo-large Inline" src={logo}/>
 	    			<div className="VerticalLine Inline"></div>
-		    		<div className="text-left Inline">
+		    		<div className="text-left Inline Main-title">
 		    			<div>Instagram</div>
 		    			<div>Analytics</div>
 		    		</div>
@@ -96,7 +96,7 @@ class SignIn extends Component {
     		</Row>
     		<Row className="List text-left">
     			<Col>
-		    		<ul>
+		    		<ul className="Main-subtitle">
 		              <li>When To Post</li>
 		              <li>Follower Growth</li>
 		              <li>Top Posts</li>
@@ -109,7 +109,7 @@ class SignIn extends Component {
 			<Panel.Body>
 
 			<div className="SignIn-Panel">
-				<h2>Sign-in With Instagram</h2>
+				<h2 className="Main-subtitle">Sign-in With Instagram</h2>
 			</div>
 
 			<div className="Login">
