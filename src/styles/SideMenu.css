@@ -2,6 +2,7 @@
 	width: 60px;
 	padding: 0px;
 	margin: auto;
+	height: 100%;
 }
 
 .nav-img {
@@ -20,11 +21,12 @@
 }
 
 .nav > li > a:hover {
-  	background-color: grey;
+  	background-color: black;
 }
 
 .nav-item {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid white;
+	width: 100%;
 }

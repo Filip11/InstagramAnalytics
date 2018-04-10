@@ -12,6 +12,7 @@ import heartWhite from '../../images/heart-insta-white.png';
 import clockPink from '../../images/clock-pink.png';
 import followerPink from '../../images/many-people-outline-pink.png';
 import heartPink from '../../images/heart-insta-pink.png';
+import questionmark from '../../images/questionmark.png';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -26,10 +27,24 @@ class SideMenu extends Component {
       this.state = {
         show: false,
         postNumber: 1,
-        clock : clockPink,
-        follower: followerWhite,
-        heart: heartWhite
+        clock : true,
+        follower: false,
+        heart: false,
+        height: undefined
       };
+  }
+
+  handleResize = () => this.setState({
+    height: window.innerHeight
+  });
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
   }
 
   handleSelect(selectedKey) {
@@ -37,24 +52,34 @@ class SideMenu extends Component {
     this.props.selectedPage(selectedKey);
 
     if (selectedKey == 1){
+        console.log("in 1");
         this.setState({ 
-          clock: clockPink,
-          follower: followerWhite,
-          heart: heartWhite
+          clock: true,
+          follower: false,
+          heart: false
          });
     }else if (selectedKey == 2){
+      console.log("in 2");
         this.setState({ 
-          clock: clockWhite,
-          follower: followerPink,
-          heart: heartWhite
-         });
+          follower: true
+         }, function () {
+    console.log('follower' + this.state.follower);
+});
     }else if (selectedKey == 3){
         this.setState({ 
-          clock: clockWhite,
-          follower: followerWhite,
-          heart: heartPink
+          clock: false,
+          follower: false,
+          heart: true
+         });
+    }else if (selectedKey == 4){
+        this.setState({ 
+          clock: false,
+          follower: false,
+          heart: false
          });
     }
+    this.forceUpdate();
+    console.log(this.state.clock);
   }
 
     render() {
@@ -63,19 +88,27 @@ class SideMenu extends Component {
       const follower = this.state.follower;
       const heart = this.state.heart;
 
+      const heightStyle = { height: this.state.height };
+
       return(
-        <div className="side-menu">
+        <div className="side-menu" style={heightStyle}>
           <Nav bsStyle="pills" stacked onSelect={this.handleSelect} className="nav" >
             <NavItem eventKey={1} title="When To Post" className="nav-item">
-              <Link to="/WhenToPost"><img className="nav-img" src={clock} /> </Link>
+              <Link to="/WhenToPost"><img className="nav-img" src={this.state.clock? clockPink: clockWhite} /> </Link>
             </NavItem>
             <NavItem eventKey={2} title="Follower Growth" className="nav-item">
-              <Link to="/FollowerGrowth"><img className="nav-img" src={follower} /> </Link>
+              <Link to="/FollowerGrowth"><img className="nav-img" src={this.state.follower? followerPink: followerWhite} /> </Link>
             </NavItem>
             <NavItem eventKey={3} title="Top Posts" className="nav-item">
-              <Link to="/TopPosts"><img className="nav-img" src={heart} /></Link>
+              <Link to="/TopPosts"><img className="nav-img" src={this.state.heart? heartPink: heartWhite} /></Link>
+            </NavItem>
+            <NavItem eventKey={4} title="Help" className="nav-item">
+              <Link to="/Help"><img className="nav-img" src={questionmark}/></Link>
             </NavItem>
           </Nav>
+
+
+
       </div>
     );
   }

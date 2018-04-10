@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../images/analyticslogo.png';
+import instalogo from '../../images/instagram-logo-white.png';
 import '../../styles/Main.css';
 import { Button, InputGroup, FormGroup, FormControl, ControlLabel, Panel, Col, Row, Grid, Glyphicon, Alert} from 'react-bootstrap';
 
@@ -10,11 +11,14 @@ class SignIn extends Component {
 
     this.handleDismiss = this.handleDismiss.bind(this);
     this.handleShow = this.handleShow.bind(this);
+    //this.handleValidation = this.handleValidation.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
       username: "",
       password: "",
-      show: false
+      show: false,
+      signedIn: false
     };
   }
 
@@ -34,10 +38,23 @@ class SignIn extends Component {
     const test = this.state.username == "johndoe1234" && this.state.password == "1234";
     if (!test){
     	this.handleShow();
+    	this.setState({ signedIn: false });
     }else{
     	//logged in to application
+    	this.setState({ signedIn: true });
+    	this.props.history.push("/WhenToPost")
     }
   }
+/*
+  handleValidation() {
+  	const test = this.state.username == "johndoe1234" && this.state.password == "1234";
+    if (!test){
+    	this.props.isSignedIn(this.state.signedIn);
+    }else{
+    	//logged in to application
+    	this.props.isSignedIn(this.state.signedIn);
+    }
+  }*/
 
   handleDismiss() {
     this.setState({ show: false });
@@ -65,26 +82,26 @@ class SignIn extends Component {
     );
 
     return (
-    <div className="Main-background">
+    <div className="Main-background bg">
+
     <Grid>
 		<Col md={6} className="Grid-center">
 			<Row className="Grid-center">
 				<Col className="MainTitle">
 	    			<img className="Logo-large Inline" src={logo}/>
 	    			<div className="VerticalLine Inline"></div>
-		    		<div className="text-left Inline">
+		    		<div className="text-left Inline Main-title">
 		    			<div>Instagram</div>
 		    			<div>Analytics</div>
 		    		</div>
 	    		</Col>
     		</Row>
     		<Row className="List text-left">
-    			<Col>
-		    		<ul>
-		              <li>When To Post</li>
-		              <li>Follower Growth</li>
-		              <li>Top Posts</li>
-		        	</ul>
+    			<Col className="Main-subtitle">
+		              <div className="text-padding">When To Post</div>
+		              <div className="text-padding">Follower Growth</div>
+		              <div className="text-padding">Top Posts</div>
+
 	        	</Col>
         	</Row>
     	</Col>
@@ -93,10 +110,11 @@ class SignIn extends Component {
 			<Panel.Body>
 
 			<div className="SignIn-Panel">
-				<h2>Sign-in With Instagram</h2>
+          <img src={instalogo} className="instalogo" />
+				<h3 className="Main-subtitle">Sign-in With Instagram</h3>
 			</div>
 
-			<div className="Login">
+			<div className="Login-form">
 
 			    {alert}
 

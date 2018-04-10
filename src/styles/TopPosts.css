@@ -1,15 +1,20 @@
 .Title {
-	font-size: 30px;
-	float: left;
+	float:left;
+	margin-left: 80px;
+	color: white;
+	font-family:"Playfair-Bold";
 }
 
-.PostImg {
-	height: auto; 
-    width: auto; 
-    max-width: 150px; 
+.newImg {
     max-height: 150px;
-    margin: auto;
-    vertical-align: middle;
+}
+
+.Post-subtitle {
+	font-family:"Playfair-Bold";
+}
+
+.Post-text{
+	font-family:"Playfair";
 }
 
 .btn-square { 
@@ -17,6 +22,7 @@
 	width: 165px; 
 	margin: auto;
     vertical-align: middle;
+    padding: 0px;
 }
 
 .btn-square:hover{

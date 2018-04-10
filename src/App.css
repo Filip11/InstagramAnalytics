@@ -3,7 +3,7 @@
   background-color: black;
   height: auto;
   width: auto;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .App-logo {
@@ -38,19 +38,28 @@
   font-size: large;
 }
 
+.text-username {
+  font-family:"Billabong";
+  font-size: 20px;
+}
+
 .App-content {
   background-color: black;
   display: inline-block;
   float: left;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  overflow-x:auto;
+  overflow: hidden;
 }
 
 .App-side-menu {
-  width: 60px;
+  width: 6%;
   float: left;
-  background-color: #424242;
-  height: 1000px; /*to be fixed*/
+  background-color: #222;
+  height: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .router {
@@ -62,6 +71,11 @@
   float: right;
 }
 
+.App-Inline {
+  display: inline-block;
+  float: left;
+}
+
 .App-user-icon {
   height: 50px;
   vertical-align: middle;
@@ -70,6 +84,14 @@
 .vertical-text {
   display: inline-block;
   vertical-align: middle;
+}
+
+.App-page{
+  height: 800px;
+  width: 94%;
+  margin: auto;
+  overflow-x:auto;
+
 }
 
 .App-VerticalLine {

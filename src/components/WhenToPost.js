@@ -4,8 +4,8 @@ import HeatMap from "react-heatmap-grid"
 import CalendarHeatmap from 'reactjs-calendar-heatmap'
 import WhenToPostStats from './WhenToPostStats.js'
 import {Container,Panel, Col, Row, Grid} from 'react-bootstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../styles/Main.css';
+import scalePic from "../images/WhenToPostScale.png"
 
 /*
 
@@ -296,7 +296,7 @@ const data = new Array(yLabels.length)
 }]
 const WhenToPost = () => (
 
-  <div className = "heatChart Main-background" >
+  <div className = "heatChart Main-background calendarHeatmap" >
     <div className="subtitle">
       <h1>When To Post</h1>
     </div>
@@ -306,8 +306,19 @@ const WhenToPost = () => (
       overview={'day'}
       handler={null}>
     </CalendarHeatmap>
-    <div className="separator"></div>
+    <div className="separator">
+    </div>
     <Grid fluid={true}>
+    <Row>
+    <div className="subtitle">
+      <h3>Likes</h3>
+    </div>
+    </Row>
+    <Row> 
+      <div>
+      <img src={scalePic} />
+      </div>
+    </Row>
     <Row>
       <div className="subtitle">
         <h2>Best Times To Post</h2>
