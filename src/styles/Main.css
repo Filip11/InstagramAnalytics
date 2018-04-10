@@ -69,9 +69,24 @@
 	font-family:"Playfair";
 }
 
+.text-padding {
+	padding: 15px;
+}
+
+.instalogo {
+	max-height: 30px;
+	margin: auto;
+}
+
 .Login {
    	padding: 30px 0;
    	max-width: 350px;
+}
+
+.Login-form {
+   	padding: 10px;
+   	max-width: 350px;
+   	padding-bottom: 30px;
 }
 
 .Login form {
@@ -95,7 +110,8 @@
 	background-color: #424242;
 	color: white;
 	border: 0px;
-	font-family: "Playfair-Bold"
+	font-family: "Playfair-Bold";
+	padding-bottom: 0px;
 }
 
 .MainTitle {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../images/analyticslogo.png';
+import instalogo from '../../images/instagram-logo-white.png';
 import '../../styles/Main.css';
 import { Button, InputGroup, FormGroup, FormControl, ControlLabel, Panel, Col, Row, Grid, Glyphicon, Alert} from 'react-bootstrap';
 
@@ -97,9 +98,9 @@ class SignIn extends Component {
     		</Row>
     		<Row className="List text-left">
     			<Col className="Main-subtitle">
-		              <div>When To Post</div>
-		              <div>Follower Growth</div>
-		              <div>Top Posts</div>
+		              <div className="text-padding">When To Post</div>
+		              <div className="text-padding">Follower Growth</div>
+		              <div className="text-padding">Top Posts</div>
 
 	        	</Col>
         	</Row>
@@ -109,10 +110,11 @@ class SignIn extends Component {
 			<Panel.Body>
 
 			<div className="SignIn-Panel">
-				<h2 className="Main-subtitle">Sign-in With Instagram</h2>
+          <img src={instalogo} className="instalogo" />
+				<h3 className="Main-subtitle">Sign-in With Instagram</h3>
 			</div>
 
-			<div className="Login">
+			<div className="Login-form">
 
 			    {alert}
 
