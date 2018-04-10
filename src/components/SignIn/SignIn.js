@@ -81,7 +81,8 @@ class SignIn extends Component {
     );
 
     return (
-    <div className="Main-background">
+    <div className="Main-background bg">
+
     <Grid>
 		<Col md={6} className="Grid-center">
 			<Row className="Grid-center">
@@ -95,12 +96,11 @@ class SignIn extends Component {
 	    		</Col>
     		</Row>
     		<Row className="List text-left">
-    			<Col>
-		    		<ul className="Main-subtitle">
-		              <li>When To Post</li>
-		              <li>Follower Growth</li>
-		              <li>Top Posts</li>
-		        	</ul>
+    			<Col className="Main-subtitle">
+		              <div>When To Post</div>
+		              <div>Follower Growth</div>
+		              <div>Top Posts</div>
+
 	        	</Col>
         	</Row>
     	</Col>

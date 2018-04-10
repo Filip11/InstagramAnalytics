@@ -56,7 +56,7 @@
 .App-side-menu {
   width: 6%;
   float: left;
-  background-color: #424242;
+  background-color: #222;
   height: auto;
   height: 100%;
   overflow: hidden;
@@ -87,8 +87,8 @@
 }
 
 .App-page{
+  height: 800px;
   width: 94%;
-  height: 100%;
   margin: auto;
   overflow-x:auto;
 
