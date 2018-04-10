@@ -83,8 +83,10 @@
 
 .App-page{
   width: 94%;
+  height: 100%;
   margin: auto;
   overflow-x:auto;
+
 }
 
 .App-VerticalLine {

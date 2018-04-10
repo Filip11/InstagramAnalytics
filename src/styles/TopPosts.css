@@ -3,20 +3,18 @@
 	float: left;
 }
 
-.PostImg {
-	height: auto; 
-    width: auto; 
-    max-width: 150px; 
+.newImg {
     max-height: 150px;
-    margin: auto;
-    vertical-align: middle;
 }
+
+
 
 .btn-square { 
 	height: 165px;
 	width: 165px; 
 	margin: auto;
     vertical-align: middle;
+    padding: 0px;
 }
 
 .btn-square:hover{

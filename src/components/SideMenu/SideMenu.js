@@ -12,6 +12,7 @@ import heartWhite from '../../images/heart-insta-white.png';
 import clockPink from '../../images/clock-pink.png';
 import followerPink from '../../images/many-people-outline-pink.png';
 import heartPink from '../../images/heart-insta-pink.png';
+import questionmark from '../../images/questionmark.png';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -70,6 +71,12 @@ class SideMenu extends Component {
           follower: false,
           heart: true
          });
+    }else if (selectedKey == 4){
+        this.setState({ 
+          clock: false,
+          follower: false,
+          heart: false
+         });
     }
     this.forceUpdate();
     console.log(this.state.clock);
@@ -95,7 +102,13 @@ class SideMenu extends Component {
             <NavItem eventKey={3} title="Top Posts" className="nav-item">
               <Link to="/TopPosts"><img className="nav-img" src={this.state.heart? heartPink: heartWhite} /></Link>
             </NavItem>
+            <NavItem eventKey={4} title="Help" className="nav-item">
+              <Link to="/Help"><img className="nav-img" src={questionmark}/></Link>
+            </NavItem>
           </Nav>
+
+
+
       </div>
     );
   }
