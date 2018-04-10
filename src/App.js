@@ -6,6 +6,7 @@ import './styles/Main.css';
 import SignIn from './components/SignIn/SignIn.js';
 import TopPosts from './components/TopPosts/TopPosts.js';
 import SideMenu from './components/SideMenu/SideMenu.js';
+import Help from './components/Help.js';
 
 import { Button, Popover, Tooltip, Thumbnail, OverlayTrigger, InputGroup, FormGroup, FormControl, ControlLabel, Panel, Col, Row, Grid, Glyphicon, Modal} from 'react-bootstrap';
 
@@ -80,6 +81,7 @@ class App extends Component {
                 <Route path="/WhenToPost" component={WhenToPost} />
                 <Route path="/FollowerGrowth" component={FollowerGrowth} />
                 <Route path="/TopPosts" component={TopPosts} />
+                <Route path="/Help" component={Help} />
             </div>
         </div>
         </div>
@@ -111,7 +113,6 @@ class App extends Component {
         <Route exact path="/" component={SignInContainer}/>
         <Route component={DefaultContainer}/>
       </Switch>
-
       </div>
       </Router>
 
